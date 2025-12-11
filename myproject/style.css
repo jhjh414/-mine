@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나만의 힐링송 소개하기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>나만의 힐링송 정원</h1>
+      <p class="subtitle">
+        오늘의 마음을 다독여 줄 두 곡의 힐링송을 소개합니다.
+      </p>
+      <p class="email">
+        Contact · <a href="mailto:beatsbywoni@hanyang.ac.kr">beatsbywoni@hanyang.ac.kr</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 인트로 섹션 (하늘 영역 느낌) -->
+    <section class="sky-intro">
+      <h2>오늘, 나를 위로해 줄 플레이리스트</h2>
+      <p>
+        힘들었던 하루, 복잡한 생각, 말로 다 꺼내기 어려운 마음들을
+        음악 한 곡에 살짝 얹어 보내볼까요?<br />
+        아래 두 곡은 제가 자주 찾는 힐링송이에요. 여러분도 함께 들어 보세요. 🌱
+      </p>
+    </section>
+
+    <!-- 힐링송 리스트 (정원/화단 느낌) -->
+    <section class="garden-section" aria-label="힐링송 소개 섹션">
+      <!-- 첫 번째 곡 -->
+      <article class="song-card">
+        <header class="song-header">
+          <h2>로꼬 - 시간이 들겠지</h2>
+          <p class="song-tagline">"시간이 조금은 필요한 그런 밤에"</p>
+        </header>
+
+        <div class="song-content">
+          <figure class="album-figure">
+            <!-- 이미지 파일: fix_you.jpg -->
+            <img
+              src="fix_you.jpg"
+              alt="로꼬 - 시간이 들겠지 앨범 커버"
+              class="album-cover"
+            />
+            <figcaption>살며시 서서히 나아지는 마음의 시간</figcaption>
+          </figure>
+
+          <div class="song-text">
+            <p class="song-intro">
+              <!-- TODO: 여기에는 '시간이 들겠지'에 대한 간단한 소개를 적어 주세요. -->
+              <!-- 예시: 이 노래를 처음 들었을 때의 상황이나, 위로가 되었던 가사를 적어도 좋아요. -->
+              (여기에 <strong>곡에 대한 간단한 소개</strong>를 직접 작성해 보세요.)
+            </p>
+
+            <p class="song-story">
+              <!-- TODO: 이 노래에 얽힌 나만의 이야기를 적어 주세요. -->
+              <!-- 예시: 이 노래를 들으면서 견뎌냈던 시기, 떠오르는 사람, 장소 등을 자유롭게 적어보세요. -->
+              (여기에는 <strong>나만의 힐링 스토리</strong>를 적을 수 있어요.)
+            </p>
+
+            <a
+              href="https://youtu.be/Mocj91WMiRw?si=Qq05PAWRdOf_4ezV"
+              target="_blank"
+              class="btn listen-btn"
+            >
+              유튜브로 듣기
+            </a>
+          </div>
+        </div>
+
+        <!-- 첫 번째 곡 감상 메모 폼 -->
+        <form class="song-form">
+          <fieldset>
+            <legend>지금 이 노래와 나의 분위기</legend>
+
+            <div class="petal-inputs">
+              <div class="field">
+                <label for="mood-loco">지금 기분 한 줄</label>
+                <input
+                  type="text"
+                  id="mood-loco"
+                  name="mood-loco"
+                  placeholder="예: 오늘도 버텨낸 나에게 건네는 작은 위로"
+                />
+              </div>
+
+              <div class="field">
+                <span class="field-label">이 노래를 듣고 싶은 순간</span>
+                <div class="checkbox-group">
+                  <label>
+                    <input type="checkbox" name="time-loco" value="night" />
+                    잠들기 전, 불 끄고 누웠을 때
+                  </label>
+                  <label>
+                    <input type="checkbox" name="time-loco" value="walk" />
+                    혼자 산책하며 걷고 있을 때
+                  </label>
+                  <label>
+                    <input type="checkbox" name="time-loco" value="work" />
+                    공부/과제가 잘 안 풀릴 때
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <span class="field-label">이 노래가 주는 느낌</span>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="feel-loco" value="warm" />
+                    포근하고 따뜻함
+                  </label>
+                  <label>
+                    <input type="radio" name="feel-loco" value="calm" />
+                    차분하고 편안함
+                  </label>
+                  <label>
+                    <input type="radio" name="feel-loco" value="tear" />
+                    눈물이 맺히는 위로
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label for="memo-loco" class="memo-label">
+              나중에 다시 읽고 싶은 감상 메모
+            </label>
+            <textarea
+              id="memo-loco"
+              name="memo-loco"
+              rows="3"
+              placeholder="<!-- TODO: 여기에 이 곡을 들으며 느꼈던 생각들을 자유롭게 적어 주세요. -->"
+            ></textarea>
+          </fieldset>
+        </form>
+      </article>
+
+      <!-- 두 번째 곡 -->
+      <article class="song-card">
+        <header class="song-header">
+          <h2>시스템서울 - 너</h2>
+          <p class="song-tagline">"조용히 스며드는 위로 같은 한 사람"</p>
+        </header>
+
+        <div class="song-content">
+          <figure class="album-figure">
+            <!-- 이미지 파일: going_home.jpg -->
+            <img
+              src="going_home.jpg"
+              alt="시스템서울 - 너 앨범 커버"
+              class="album-cover"
+            />
+            <figcaption>집으로 돌아가는 길, 마음이 가벼워지는 순간</figcaption>
+          </figure>
+
+          <div class="song-text">
+            <p class="song-intro">
+              <!-- TODO: 여기에는 '너'라는 곡에 대한 간단한 소개를 적어 주세요. -->
+              <!-- 예시: 첫인상, 장르, 분위기, 좋아하는 부분 등을 적어 보세요. -->
+              (여기에 <strong>곡에 대한 간단한 소개</strong>를 직접 작성해 보세요.)
+            </p>
+
+            <p class="song-story">
+              <!-- TODO: 이 노래를 들으면 떠오르는 장면이나 사람에 대한 이야기를 적어 주세요. -->
+              <!-- 예시: 버스 창밖 보면서 들었던 기억, 특정 계절에만 듣는 이유 등 -->
+              (여기에는 <strong>나만의 힐링 스토리</strong>를 적을 수 있어요.)
+            </p>
+
+            <a
+              href="https://youtu.be/TiOpGgCXeTO?si=doNr9VCVbXfqrxpn"
+              target="_blank"
+              class="btn listen-btn"
+            >
+              유튜브로 듣기
+            </a>
+          </div>
+        </div>
+
+        <!-- 두 번째 곡 감상 메모 폼 -->
+        <form class="song-form">
+          <fieldset>
+            <legend>이 노래가 어울리는 풍경</legend>
+
+            <div class="petal-inputs">
+              <div class="field">
+                <span class="field-label">머릿속에 떠오르는 색</span>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="color-system" value="mint" />
+                    파스텔 민트
+                  </label>
+                  <label>
+                    <input type="radio" name="color-system" value="lavender" />
+                    연보라 라벤더
+                  </label>
+                  <label>
+                    <input type="radio" name="color-system" value="pink" />
+                    부드러운 핑크
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="place-system">이 노래를 들으면 떠오르는 장소</label>
+                <input
+                  type="text"
+                  id="place-system"
+                  name="place-system"
+                  placeholder="예: 저녁 노을이 비치는 버스 창가"
+                />
+              </div>
+
+              <div class="field">
+                <span class="field-label">오늘의 한마디</span>
+                <div class="checkbox-group leaf-checklist">
+                  <label>
+                    <input type="checkbox" name="today-system" value="thank" />
+                    오늘도 여기까지 온 나에게, 수고했어
+                  </label>
+                  <label>
+                    <input type="checkbox" name="today-system" value="slow" />
+                    서두르지 않아도 괜찮다는 안도감
+                  </label>
+                  <label>
+                    <input type="checkbox" name="today-system" value="hope" />
+                    내일은 조금 더 따뜻할 거라는 기대
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label for="memo-system" class="memo-label">
+              나만 알고 싶은 비밀스러운 감상
+            </label>
+            <textarea
+              id="memo-system"
+              name="memo-system"
+              rows="3"
+              placeholder="<!-- TODO: 여기에는 이 곡과 관련된 조금 더 개인적인 이야기를 적어 주세요. -->"
+            ></textarea>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+
+    <!-- 전체 플레이리스트에 대한 나의 정리 -->
+    <section class="reflection-section">
+      <h2>오늘의 힐링 기록</h2>
+      <p>
+        두 곡을 모두 들어본 후, 오늘의 나를 위한 짧은 편지를 남겨 보세요.
+        나중에 이 페이지를 다시 열었을 때, 분명 그때의 나를 따뜻하게 안아 줄 거예요.
+      </p>
+
+      <form class="reflection-form">
+        <div class="reflection-grid">
+          <div class="field">
+            <label for="email">답장을 보낼 메일 주소</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="beatsbywoni@hanyang.ac.kr"
+            />
+          </div>
+
+          <div class="field">
+            <label for="today-keyword">오늘을 한 단어로 표현하면?</label>
+            <input
+              type="text"
+              id="today-keyword"
+              name="today-keyword"
+              placeholder="예: 회복, 버팀, 혹은 작은 행복"
+            />
+          </div>
+
+          <div class="field">
+            <label for="self-letter">미래의 나에게 보내는 한 줄 편지</label>
+            <textarea
+              id="self-letter"
+              name="self-letter"
+              rows="3"
+              placeholder="<!-- TODO: 여기에는 미래의 나에게 전하고 싶은 말을 적어 주세요. -->"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 나만의 힐링송 정원 · beatsbywoni@hanyang.ac.kr</p>
+    <p class="small">
+      이 페이지는 HTML5 시맨틱 태그와 CSS Flexbox, Transition, Transform 연습용으로 제작되었습니다.
+    </p>
+  </footer>
+</body>
+</html>
+
+/* ------------------------------
+   기본 설정 & 색상 팔레트
+------------------------------ */
+:root {
+  --mint-green: #c6f1e7;
+  --mint-green-soft: rgba(198, 241, 231, 0.9);
+  --lavender: #d9c8ff;
+  --lavender-soft: rgba(217, 200, 255, 0.85);
+  --soft-pink: #ffd6e8;
+  --soft-pink-soft: rgba(255, 214, 232, 0.9);
+  --deep-green: #264653;
+  --leaf-green: #5aa382;
+  --earth-brown: #5b4636;
+  --sky-blue: #b8e0ff;
+  --white: #ffffff;
+  --text-main: #333333;
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.08);
+  --radius-large: 24px;
+  --radius-medium: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--text-main);
+  background: radial-gradient(circle at top, #eaf9ff 0, #f9fffb 45%, #fdf7ff 100%);
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   공통 레이아웃
+------------------------------ */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--deep-green);
+  margin-top: 0;
+}
+
+p {
+  margin: 0.4rem 0;
+}
+
+/* ------------------------------
+   헤더(하늘 느낌)
+------------------------------ */
+.site-header {
+  background: linear-gradient(
+    135deg,
+    var(--sky-blue),
+    var(--mint-green),
+    #fef6ff
+  );
+  padding: 2.2rem 1.5rem 2.5rem;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  letter-spacing: 0.08em;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.email {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.email a {
+  color: var(--earth-brown);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(91, 70, 54, 0.4);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.email a:hover {
+  color: var(--deep-green);
+  border-bottom-color: var(--deep-green);
+}
+
+/* ------------------------------
+   인트로 섹션
+------------------------------ */
+.sky-intro {
+  margin-top: 2rem;
+  padding: 1.5rem 1.6rem;
+  background: rgba(184, 224, 255, 0.2);
+  border-radius: var(--radius-medium);
+  border: 1px solid rgba(184, 224, 255, 0.7);
+}
+
+/* ------------------------------
+   힐링송 카드 (정원/화단)
+------------------------------ */
+.garden-section {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.song-card {
+  background: var(--white);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-soft);
+  padding: 1.8rem 1.6rem;
+  border: 1px solid rgba(198, 241, 231, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 카드마다 살짝 다른 배경 포인트 */
+.song-card:nth-of-type(1) {
+  background: linear-gradient(
+    135deg,
+    rgba(198, 241, 231, 0.6),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.song-card:nth-of-type(2) {
+  background: linear-gradient(
+    135deg,
+    rgba(217, 200, 255, 0.5),
+    rgba(255, 255, 255, 0.95)
+  );
+}
+
+/* 카드 뒤쪽 잎사귀 느낌 장식 */
+.song-card::before,
+.song-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(18px);
+  z-index: 0;
+}
+
+.song-card::before {
+  width: 220px;
+  height: 220px;
+  background: var(--mint-green-soft);
+  top: -80px;
+  right: -40px;
+}
+
+.song-card::after {
+  width: 200px;
+  height: 200px;
+  background: var(--soft-pink-soft);
+  bottom: -90px;
+  left: -60px;
+}
+
+.song-header,
+.song-content,
+.song-form {
+  position: relative;
+  z-index: 1; /* 장식보다 위로 */
+}
+
+.song-header h2 {
+  margin-bottom: 0.2rem;
+}
+
+.song-tagline {
+  font-size: 0.9rem;
+  color: var(--earth-brown);
+}
+
+/* 내용 영역 - Flexbox */
+.song-content {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* 앨범 커버 & 캡션 */
+.album-figure {
+  flex: 0 0 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 26px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transform: rotate(-3deg);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* 카드 전체에 hover 시 앨범이 살짝 회전하며 커지는 효과 */
+.song-card:hover .album-cover {
+  transform: scale(1.03) rotate(0deg);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
+
+/* 살짝 느리게 도는 애니메이션 (hover 시) */
+.song-card:hover .album-cover {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: scale(1.03) rotate(0deg);
+  }
+  to {
+    transform: scale(1.03) rotate(360deg);
+  }
+}
+
+.album-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* 텍스트 영역 */
+.song-text {
+  flex: 1;
+  min-width: 230px;
+}
+
+.song-intro,
+.song-story {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 0.8rem 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+/* 듣기 버튼 */
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.listen-btn {
+  background: var(--leaf-green);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(90, 163, 130, 0.45);
+}
+
+.listen-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 26px rgba(90, 163, 130, 0.55);
+  background: #4b9470;
+}
+
+/* ------------------------------
+   폼 영역 (꽃잎 배치 & nth-child)
+------------------------------ */
+.song-form {
+  margin-top: 1.4rem;
+}
+
+.song-form fieldset {
+  border: none;
+  padding: 1.1rem 0.9rem 0.3rem;
+  margin: 0;
+  border-radius: var(--radius-medium);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.song-form legend {
+  font-weight: 600;
+  color: var(--deep-green);
+  padding: 0 0.3rem;
+}
+
+/* 꽃잎처럼 배치되는 입력 그룹 */
+.petal-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.field {
+  flex: 1 1 220px;
+  padding: 0.8rem 0.9rem;
+  border-radius: 999px;
+  background: var(--mint-green-soft);
+  border: 1px solid rgba(198, 241, 231, 0.8);
+  position: relative;
+}
+
+/* nth-child로 그라데이션 느낌 */
+.petal-inputs .field:nth-child(2) {
+  background: var(--lavender-soft);
+  border-color: rgba(217, 200, 255, 0.9);
+}
+
+.petal-inputs .field:nth-child(3) {
+  background: var(--soft-pink-soft);
+  border-color: rgba(255, 214, 232, 0.9);
+}
+
+.field-label,
+.memo-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--deep-green);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* 입력 요소 스타일 */
+.song-form input[type="text"],
+.song-form input[type="email"],
+.song-form textarea {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(38, 70, 83, 0.2);
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* textarea는 꽃잎 모양을 유지하면서 조금 더 둥근 느낌 */
+.song-form textarea {
+  border-radius: 18px;
+  resize: vertical;
+}
+
+/* 포커스 시 잎사귀 느낌의 연필 강조 효과 */
+.song-form input:focus,
+.song-form textarea:focus {
+  border-color: var(--leaf-green);
+  box-shadow: 0 0 0 2px rgba(90, 163, 130, 0.35);
+  background-color: #ffffff;
+}
+
+/* 체크박스 & 라디오 그룹 정리 */
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* 체크박스/라디오 커스텀 느낌 (기본 input을 활용한 간단한 스타일) */
+.song-form input[type="checkbox"],
+.song-form input[type="radio"] {
+  accent-color: var(--leaf-green);
+}
+
+/* 잎사귀 체크리스트: nth-child로 줄무늬/리프 패턴 */
+.leaf-checklist label:nth-child(odd) {
+  background: rgba(198, 241, 231, 0.45);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.leaf-checklist label:nth-child(even) {
+  background: rgba(217, 200, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+/* ------------------------------
+   전체 힐링 기록 섹션
+------------------------------ */
+.reflection-section {
+  margin-top: 2.8rem;
+  padding: 1.6rem 1.5rem 1.8rem;
+  border-radius: var(--radius-large);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(198, 241, 231, 0.7);
+}
+
+.reflection-form {
+  margin-top: 1rem;
+}
+
+.reflection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.reflection-grid .field {
+  flex: 1 1 260px;
+  border-radius: 18px;
+}
+
+.reflection-grid .field textarea {
+  border-radius: 18px;
+}
+
+/* 이메일 입력 필드에만 적용되는 속성 선택자 예시 */
+.reflection-form input[type="email"] {
+  border: 1px dashed rgba(91, 70, 54, 0.5);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------
+   푸터 (땅 느낌)
+------------------------------ */
+.site-footer {
+  margin-top: 1.5rem;
+  padding: 1.3rem 1.5rem 1.6rem;
+  background: linear-gradient(180deg, #f7f1e9, #d8c3a5);
+  text-align: center;
+  color: #3f2f23;
+  font-size: 0.85rem;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+.site-footer .small {
+  opacity: 0.8;
+}
+
+/* ------------------------------
+   반응형 처리
+------------------------------ */
+@media (max-width: 700px) {s
+  .song-card {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .song-content {
+    flex-direction: column;
+  }
+
+  .album-figure {
+    margin: 0 auto;
+  }
+
+  main {
+    padding-inline: 1rem;
+  }
+}

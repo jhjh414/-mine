@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나만의 힐링송 소개하기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>나만의 힐링송 정원</h1>
+      <p class="subtitle">
+        오늘의 마음을 다독여 줄 두 곡의 힐링송을 소개합니다.
+      </p>
+      <p class="email">
+        Contact · <a href="mailto:zcgzcg134@gmail.com">zcgzcg134@gmail.com</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 인트로 섹션 (하늘 영역 느낌) -->
+    <section class="sky-intro">
+      <h2>오늘, 나를 위로해 줄 플레이리스트</h2>
+      <p>
+        힘들었던 하루, 복잡한 생각, 말로 다 꺼내기 어려운 마음들을
+        음악 한 곡에 살짝 얹어 보내볼까요?<br />
+        아래 두 곡은 제가 자주 찾는 힐링송이에요. 여러분도 함께 들어 보세요. 🌱
+      </p>
+    </section>
+
+    <!-- 힐링송 리스트 (정원/화단 느낌) -->
+    <section class="garden-section" aria-label="힐링송 소개 섹션">
+      <!-- 첫 번째 곡 -->
+      <article class="song-card">
+        <header class="song-header">
+          <h2>로꼬 - 시간이 들겠지</h2>
+          <p class="song-tagline">"시원한 바람이 부는 밤에"</p>
+        </header>
+
+        <div class="song-content">
+          <figure class="album-figure">
+            <!-- 이미지 파일: fix_you.jpg -->
+            <img
+              src="img1.jpeg"
+              alt="로꼬 - 시간이 들겠지 앨범 커버"
+              class="album-cover"
+            />
+            <figcaption>살며시 서서히 나아지는 마음의 시간</figcaption>
+          </figure>
+
+          <div class="song-text">
+            <p class="song-intro">
+              <!-- TODO: 여기에는 '시간이 들겠지'에 대한 간단한 소개를 적어 주세요. -->
+              <!-- 예시: 이 노래를 처음 들었을 때의 상황이나, 위로가 되었던 가사를 적어도 좋아요. -->
+              (무언가로 인해 마음이 복잡할 때 시간이 해결해줄 것이라며 위로를 건네주는 것 같다.)
+            </p>
+
+            <p class="song-story">
+              <!-- TODO: 이 노래에 얽힌 나만의 이야기를 적어 주세요. -->
+              <!-- 예시: 이 노래를 들으면서 견뎌냈던 시기, 떠오르는 사람, 장소 등을 자유롭게 적어보세요. -->
+              (고등학생 시절 힘든 일이 있었을 때 나에게 큰 위로를 주었다.)
+            </p>
+
+            <a
+              href="https://youtu.be/Mocj91WMiRw?si=Qq05PAWRdOf_4ezV"
+              target="_blank"
+              class="btn listen-btn"
+            >
+              유튜브로 듣기
+            </a>
+          </div>
+        </div>
+
+        <!-- 첫 번째 곡 감상 메모 폼 -->
+        <form class="song-form">
+          <fieldset>
+            <legend>지금 이 노래와 나의 분위기</legend>
+
+            <div class="petal-inputs">
+              <div class="field">
+                <label for="mood-loco">지금 기분 한 줄</label>
+                <input
+                  type="text"
+                  id="mood-loco"
+                  name="mood-loco"
+                  placeholder="사소한 문제들은 대수롭지 않게 느껴지는 기분"
+                />
+              </div>
+
+              <div class="field">
+                <span class="field-label">이 노래를 듣고 싶은 순간</span>
+                <div class="checkbox-group">
+                  <label>
+                    <input type="checkbox" name="time-loco" value="night" />
+                    잠들기 전, 불 끄고 누웠을 때
+                  </label>
+                  <label>
+                    <input type="checkbox" name="time-loco" value="walk" />
+                    혼자 산책하며 걷고 있을 때
+                  </label>
+                  <label>
+                    <input type="checkbox" name="time-loco" value="work" />
+                    무언가 힘든 일이 있을 때
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <span class="field-label">이 노래가 주는 느낌</span>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="feel-loco" value="warm" />
+                    포근하고 따뜻함
+                  </label>
+                  <label>
+                    <input type="radio" name="feel-loco" value="calm" />
+                    차분하고 편안함
+                  </label>
+                  <label>
+                    <input type="radio" name="feel-loco" value="tear" />
+                    잔잔한 위로
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label for="memo-loco" class="memo-label">
+              잔잔하고 서정적인 노래의 분위기가 나에게 위로를 해주며 마음을 편해지는 노래
+            </label>
+            <textarea
+              id="memo-loco"
+              name="memo-loco"
+              rows="3"
+              placeholder="<!-- TODO: 여기에 이 곡을 들으며 느꼈던 생각들을 자유롭게 적어 주세요. -->"
+            ></textarea>
+          </fieldset>
+        </form>
+      </article>
+
+      <!-- 두 번째 곡 -->
+      <article class="song-card">
+        <header class="song-header">
+          <h2>시스템서울 - 너</h2>
+          <p class="song-tagline">"조용히 스며드는 위로 같은 한 사람"</p>
+        </header>
+
+        <div class="song-content">
+          <figure class="album-figure">
+            <!-- 이미지 파일: going_home.jpg -->
+            <img
+              src="img2.jpg"
+              alt="시스템서울 - 너 앨범 커버"
+              class="album-cover"
+            />
+            <figcaption>어두운 밤, 감성이 필요한 순간</figcaption>
+          </figure>
+
+          <div class="song-text">
+            <p class="song-intro">
+              <!-- TODO: 여기에는 '너'라는 곡에 대한 간단한 소개를 적어 주세요. -->
+              <!-- 예시: 첫인상, 장르, 분위기, 좋아하는 부분 등을 적어 보세요. -->
+              새벽에 잠이 안와 인스타그램을 하고 있을 때 우연히 화면에 뜬 노래
+            </p>
+
+            <p class="song-story">
+              <!-- TODO: 이 노래를 들으면 떠오르는 장면이나 사람에 대한 이야기를 적어 주세요. -->
+              <!-- 예시: 버스 창밖 보면서 들었던 기억, 특정 계절에만 듣는 이유 등 -->
+              새벽에 그 분위기와 합쳐졌을 때 더욱 좋은 노래
+            </p>
+
+            <a
+              href="https://youtu.be/TiOpGgCXeTO?si=doNr9VCVbXfqrxpn"
+              target="_blank"
+              class="btn listen-btn"
+            >
+              유튜브로 듣기
+            </a>
+          </div>
+        </div>
+
+        <!-- 두 번째 곡 감상 메모 폼 -->
+        <form class="song-form">
+          <fieldset>
+            <legend>야심한 새벽</legend>
+
+            <div class="petal-inputs">
+              <div class="field">
+                <span class="field-label">머릿속에 떠오르는 색</span>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="color-system" value="black" />
+                    짙은 검정색
+                  </label>
+                  <label>
+                    <input type="radio" name="color-system" value="yellow" />
+                    연한 노란색
+                  </label>
+                  <label>
+                    <input type="radio" name="color-system" value="gray" />
+                    짙은 회색
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="place-system">이 노래를 들으면 떠오르는 장소</label>
+                <input
+                  type="text"
+                  id="place-system"
+                  name="place-system"
+                  placeholder="불이 꺼진 침대 위"
+                />
+              </div>
+
+              <div class="field">
+                <span class="field-label">오늘의 한마디</span>
+                <div class="checkbox-group leaf-checklist">
+                  <label>
+                    <input type="checkbox" name="today-system" value="thank" />
+                    오늘도 여기까지 온 나에게, 수고했어
+                  </label>
+                  <label>
+                    <input type="checkbox" name="today-system" value="slow" />
+                    서두르지 않아도 괜찮다는 안도감
+                  </label>
+                  <label>
+                    <input type="checkbox" name="today-system" value="hope" />
+                    내일은 조금 더 따뜻할 거라는 기대
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label for="memo-system" class="memo-label">
+              나만 알고 싶은 비밀스러운 감상
+            </label>
+            <textarea
+              id="memo-system"
+              name="memo-system"
+              rows="3"
+              placeholder="<!-- TODO: 새벽에 불 꺼진 방에서 스탠드 불만 켜놓고 이불을 덮은 뒤 들으면 기분이 좋다. -->"
+            ></textarea>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+
+    <!-- 전체 플레이리스트에 대한 나의 정리 -->
+    <section class="reflection-section">
+      <h2>오늘의 힐링 기록</h2>
+      <p>
+        두 곡을 모두 들어본 후, 오늘의 나를 위한 짧은 편지를 남겨 보세요.
+        나중에 이 페이지를 다시 열었을 때, 분명 그때의 나를 따뜻하게 안아 줄 거예요.
+      </p>
+
+      <form class="reflection-form">
+        <div class="reflection-grid">
+          <div class="field">
+            <label for="email">답장을 보낼 메일 주소</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="zcgzcg134@gmail.com"
+            />
+          </div>
+
+          <div class="field">
+            <label for="today-keyword">오늘을 한 단어로 표현하면?</label>
+            <input
+              type="text"
+              id="today-keyword"
+              name="today-keyword"
+              placeholder="작은 회복"
+            />
+          </div>
+
+          <div class="field">
+            <label for="self-letter">미래의 나에게 보내는 한 줄 편지</label>
+            <textarea
+              id="self-letter"
+              name="self-letter"
+              rows="3"
+              placeholder="<!-- TODO: 앞으로도 열심히 살자 -->"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 나만의 힐링송 정원 · zcgzcg134@gmail.com</p>
+    <p class="small">
+      2025-11-28
+    </p>
+  </footer>
+</body>
+</html>
